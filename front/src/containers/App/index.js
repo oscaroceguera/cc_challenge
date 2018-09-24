@@ -7,6 +7,7 @@ import { TextField, Button, CircularProgress} from '@material-ui/core'
 
 import styles from './styles.css'
 
+const HOST = process.env.API_URL
 
 const stylesTheme = theme => ({
   titleField: {
@@ -48,7 +49,7 @@ class App extends React.Component {
     }
 
     try {
-      const successData = await axios.post('http://localhost:5000/api/issue', data).then(res => res.data)
+      const successData = await axios.post(`${HOST}/api/issue`, data).then(res => res.data)
       this.setState({
         loading: false,
         successData

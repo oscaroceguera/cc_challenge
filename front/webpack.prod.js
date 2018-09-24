@@ -12,7 +12,7 @@ module.exports = merge(common, {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production'),
-        API_URL: JSON.stringify('https://powerful-forest-19235.herokuapp.com')
+        API_URL: JSON.stringify('https://young-tundra-65262.herokuapp.com')
       }
     })
   ]

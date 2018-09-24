@@ -15,6 +15,8 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.3",
+    "github-create-issue": "^2.0.0",
+    "github-username": "^4.1.0",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
